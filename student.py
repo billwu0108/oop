@@ -8,10 +8,12 @@ class Student:
         self.height = height
         self.weight = weight
 
+    # public method
     def bmi(self):
         return self.weight / (self.height / 100.0) ** 2
 
-    def is_fat(self):
+    # private method
+    def __is_fat(self):
         return True if self.bmi() >= 35 else False
 
 # 如果我直接被執行的話，才執行以下的程式碼片段
